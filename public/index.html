@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Password Generator</title>
+</head>
+
+<body>
+
+  <section class="container">
+    <h1>Gerador de senhas</h1>
+
+    <div class="senha-gerada">Selecione as opções</div>
+
+    <div class="inputsCheck">
+
+      <div class="boxInput">
+        <input id="caracteres" value="15" type="number" min="1" max="50" class="qtd-caracteres" >
+        <label for="caracteres">Quantidade de caracteres </label> 
+      </div>
+      <div class="boxInput">
+        <input id="maiusculas" type="checkbox" class="chk-maiusculas">
+        <label for="maiusculas">Adicionar maiúsculas</label>
+      </div>
+      <div class="boxInput">
+        <input id="minusculas" type="checkbox" class="chk-minusculas">
+        <label for="minusculas">Adicionar minúsculas</label>
+      </div>
+      <div class="boxInput">
+        <input id="numeroAdd" type="checkbox" class="chk-numeros">
+        <label for="numeroAdd">Adicionar números</label>
+      </div>
+      <div class="boxInput">
+        <input id="simbolosAdd" type="checkbox" class="chk-simbolos">
+        <label for="simbolosAdd">Adicionar símbolos</label>
+      </div>
+    </div>
+
+    <button class="gerar-senha">Gerar senha</button>
+
+  </section>
+
+  <script src="./assets/js/bundle.js"></script>
+</body>
+
+</html>

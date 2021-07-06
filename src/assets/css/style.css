@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root {
+  --purple: rgb(134, 152, 255);
+  --purple_2: rgb(73, 84, 144);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--purple),
+    var(--purple_2)
+  );
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  white-space: nowrap;
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  max-width: 50vh;
+  width: 50vh;
+  margin: auto;
+  background: rgb(238, 238, 238);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: -10px 8px 20px 8px rgb(0 0 0 / 32%);
+}
+
+form input, form label, form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form input {
+  font-size: 24px;
+  height: 50px;
+  padding: 0 20px;
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}
+
+.senha-gerada {
+  font-size: 2em;
+  color: var (--primary-color);
+  margin: 40px 0;
+  max-width: 40vh;
+  overflow-x: auto;
+}
+
+input[type="number"] {
+  padding: 5px 0 5px 5px;
+}
+input[type="checkbox"] {
+  width: 25px;
+  height: 25px;
+}
+
+
+.boxInput {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.boxInput label{
+  margin-left: 8px;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+.inputsCheck {
+  display: flex;
+  flex-direction: column;
+}
+
+button.gerar-senha  {
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 30px;
+  background-color: var(--purple);
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  color: rgb(0, 0, 0);
+}
+button.gerar-senha:hover {
+  opacity: 0.9;
+}
+button.gerar-senha:active {
+  transform: scale(0.9);
+}
